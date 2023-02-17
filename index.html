@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- design heder dection -->
     <header >
         <div class="w-[90%] mx-auto bg-sky-100 flex justify-between p-6 align-center mb-12 ">
             <div>
@@ -22,33 +23,110 @@
             </div>
         </div>
         <main>
+            <!-- design card section -->
             <section>
-                <div class="flex gap-4">
-                    <div class="bg-sky-500 w-[75%]">
+                <div class="flex gap-4 w-[90%] mx-auto">
+                    <div class="w-[75%] grid grid-cols-3 gap-4">
+                        <!-- triangle card -->
                         <div>
                             <div class="card w-full bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                   <img src="images/triangle.png" alt="" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
-                                  <h2 class="card-title">Triangle!</h2>
+                                  <h2 class="card-title">Triangle</h2>
                                   <p>Area (A) = 0.5 x b x h</p>
-                                  <h1><input type="text" placeholder="b" class="input w-[30%] "/>cm  <input type="text" placeholder="b" class="input w-[30%] " /> cm</p></h1>
-                                  <p><input type="text" placeholder="b" class="input w-[30%] "/>cm  <input type="text" placeholder="b" class="input w-[30%] " /> cm</p>
+                                  <p><input type="text" placeholder="b" class="input w-[30%] bg-gray-200 "/> cm  <input type="text" placeholder="h" class="input w-[30%] bg-gray-200 " /> cm</p>
                                   <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
+                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
                                   </div>
                                 </div>
                               </div>
                         </div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <!-- Rectangle card -->
+                        <div>
+                            <div class="card w-full bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                  <img src="images/rectangle.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title">Rectangle</h2>
+                                  <p>Area (A) = w x l</p>
+                                  <p><input type="text" placeholder="w" class="input w-[30%] bg-gray-200 "/> cm  <input type="text" placeholder="l" class="input w-[30%] bg-gray-200 " /> cm</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Parallelogram Card -->
+                        <div>
+                            <div class="card w-full bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                  <img src="images/parallelogram.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title">Parallelogram</h2>
+                                  <p>Area (A) = x b x h</p>
+                                  <p><input type="text" placeholder="b" class="input w-[30%] bg-gray-200 "/> cm  <input type="text" placeholder="h" class="input w-[30%] bg-gray-200 " /> cm</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Rhombus card -->
+                        <div>
+                            <div class="card w-full bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                  <img src="images/rhombus.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title">Rhombus</h2>
+                                  <p>Area (A) = 0.5 x d1 x d2</p>
+                                  <p><input type="text" placeholder="d1" class="input w-[30%] bg-gray-200"/> cm  <input type="text" placeholder="d2" class="input w-[30%] bg-gray-200" /> cm</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Pentagon Card -->
+                        <div>
+                            <div class="card w-full bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                  <img src="images/pentagon.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title">Pentagon</h2>
+                                  <p>Area (A) = 0.5 x p x b</p>
+                                  <p><input type="text" placeholder="p" class="input w-[30%] bg-gray-200 "/> cm  <input type="text" placeholder="b" class="input w-[30%] bg-gray-200 " /> cm</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Ellipse Card -->
+                        <div>
+                            <div class="card w-full bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                  <img src="images/ellipse.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                  <h2 class="card-title">Ellipse</h2>
+                                  <p>Area (A) = 3.14 x ab</p>
+                                  <p><input type="text" placeholder="a" class="input w-[30%] bg-gray-200 "/> cm  <input type="text" placeholder="b" class="input w-[30%] bg-gray-200 " /> cm</p>
+                                  <div class="card-actions">
+                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="bg-sky-100 w-[25%]">
-                        <h1>start</h1>
+                    <!-- Area Calculation -->
+                    <div class="w-[25%]">
+                        <h1 class="font-bold text-2xl text-center underline">Area Calculation</h1>
                     </div>
                 </div>
             </section>
