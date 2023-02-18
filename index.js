@@ -1,36 +1,40 @@
-// card bg color rendomly
-function setBg (){
+// card bg color randomly
+function setBg (colorCardId){
+    const bodyColor= document.getElementById(colorCardId);
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.body.style.backgroundColor = "#" + randomColor;
+    bodyColor.style.backgroundColor = "#" + randomColor;
     color.innerHTML = "#" + randomColor;
     
   }
 
-  document.getElementById('triangle-card').addEventListener('mouseenter', function(){
-    
-    setBg ();
+  document.getElementById('triangle').addEventListener('mouseenter', function(){
+    setBg ('triangle');
     
   });
-//   document.getElementById('rectangle-card').addEventListener('mouseenter', function(){
-//     setBg();
-//   });
-//   document.getElementById('parallelogram-card').addEventListener('mouseenter', function(){
-//     setBg();
-//   });
-//   document.getElementById('rhombus-card').addEventListener('mouseenter', function(){
-//     setBg();
-//   });
-//   document.getElementById('pentagon-card').addEventListener('mouseenter', function(){
-//     setBg();
-//   });
-//   document.getElementById('ellipse-card').addEventListener('mouseenter', function(){
-//     setBg();
-//   });
+  document.getElementById('rectangle').addEventListener('mouseenter', function(){
+    setBg('rectangle');
+  });
+
+  document.getElementById('parallelogram').addEventListener('mouseenter', function(){
+    setBg('parallelogram');
+  });
+
+  document.getElementById('rhombus').addEventListener('mouseenter', function(){
+    setBg('rhombus');
+  });
+
+  document.getElementById('pentagon').addEventListener('mouseenter', function(){
+    setBg('pentagon');
+  });
+
+  document.getElementById('ellipse').addEventListener('mouseenter', function(){
+    setBg('ellipse');
+  });
 
 
 //   calculation triangle
-let no=0;
 
+let no=0;
 document.getElementById('triangle-btn').addEventListener('click', function(){
     no +=1;
     const cardTitle= document.getElementById('card-title').innerText;
@@ -161,7 +165,7 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
 
 
 
-
+// Result show
 function setTableValue(sreal, title, area) {
     const table = document.getElementById( 'table-body' );
     const tr = document.createElement( 'tr' );
