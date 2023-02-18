@@ -1,4 +1,4 @@
-// card bg color randomly
+// card bg color randomly function re use
 function setBg (colorCardId){
     const bodyColor= document.getElementById(colorCardId);
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -165,7 +165,7 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
 
 
 
-// Result show
+// Result show function re use
 function setTableValue(sreal, title, area) {
     const table = document.getElementById( 'table-body' );
     const tr = document.createElement( 'tr' );
