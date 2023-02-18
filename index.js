@@ -49,6 +49,10 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     if ( isNaN(totalArea) ) {
         alert( 'Enter a valided number' );
     }
+    else if(triangleBase < 0 || triangleHight < 0 ){
+        alert( 'Enter a valided number' );
+    }
+
     else {
         setTableValue(no, cardTitle, totalArea);
     }
@@ -60,19 +64,27 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
 document.getElementById('rectangle-btn').addEventListener('click', function(){
     no +=1;
     const cardTitle= document.getElementById('rectangle-title').innerText;
-    const rectangleWidth = document.getElementById('rectangle-width').value;  
+    const rectangleWidth = document.getElementById('rectangle-width').value;   
     const rectangleLength = document.getElementById('rectangle-length').value;  
     const area = parseFloat(rectangleWidth) * parseFloat(rectangleLength);
     const totalArea = area.toFixed(2);
+
    
     
 
     if ( isNaN(totalArea) ) {
         alert( 'Enter a valided number' );
     }
+
+    else if(rectangleWidth < 0 || rectangleLength < 0 ){
+        alert( 'Enter a valided number' );
+    }
+
     else {
         setTableValue(no, cardTitle, totalArea);
+        
     }
+    
     
 });
 // calculation Parallelogram
@@ -81,7 +93,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     no +=1;
     const cardTitle= document.getElementById('parallelogram-title').innerText;
     const parallelogramBase = document.getElementById('parallelogram-base').value;
-    const parallelogramHight = document.getElementById('parallelogram-hight').value;  
+    const parallelogramHight = document.getElementById('parallelogram-hight').value; 
     const area = parseFloat(parallelogramBase)* parseFloat(parallelogramHight);
    
     const totalArea = area.toFixed(2);
@@ -89,6 +101,9 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     
 
     if ( isNaN(totalArea) ) {
+        alert( 'Enter a valided number' );
+    }
+    else if(parallelogramBase < 0 || parallelogramHight < 0 ){
         alert( 'Enter a valided number' );
     }
     else {
@@ -113,6 +128,11 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
     if ( isNaN(totalArea) ) {
         alert( 'Enter a valided number' );
     }
+
+    else if(rhombusKornoOne < 0 || rhombusKornoTwo < 0 ){
+        alert( 'Enter a valided number' );
+    }
+
     else {
         setTableValue(no, cardTitle, totalArea);
     }
@@ -135,6 +155,11 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
     if ( isNaN(totalArea) ) {
         alert( 'Enter a valided number' );
     }
+
+    else if(pentagonBase < 0 || pentagonHight < 0 ){
+        alert( 'Enter a valided number' );
+    }
+
     else {
         setTableValue(no, cardTitle, totalArea);
     }
@@ -155,6 +180,10 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
     
 
     if ( isNaN(totalArea) ) {
+        alert( 'Enter a valided number' );
+    }
+
+    else if(ellipseBase < 0 || ellipseHight < 0 ){
         alert( 'Enter a valided number' );
     }
     else {
