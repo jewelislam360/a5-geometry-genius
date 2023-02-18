@@ -52,12 +52,12 @@
                                 <img src="images/rectangle.png" alt="" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Rectangle</h2>
+                                <h2 id="rectangle-title" class="card-title">Rectangle</h2>
                                 <p>Area (A) = w x l</p>
-                                <p><input type="text" placeholder="w" class="input w-[30%] bg-gray-200 " /> cm <input
+                                <p><input id="rectangle-width" type="text" placeholder="w" class="input w-[30%] bg-gray-200 " /> cm <input id="rectangle-length"
                                         type="text" placeholder="l" class="input w-[30%] bg-gray-200 " /> cm</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                    <button id="rectangle-btn" class="btn btn-wide bg-blue-500">Calculate</button>
                                 </div>
                             </div>
                         </div>
@@ -69,12 +69,12 @@
                                 <img src="images/parallelogram.png" alt="" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Parallelogram</h2>
-                                <p>Area (A) = x b x h</p>
-                                <p><input type="text" placeholder="b" class="input w-[30%] bg-gray-200 " /> cm <input
+                                <h2 id="parallelogram-title" class="card-title">Parallelogram</h2>
+                                <p>Area (A) = b x h</p>
+                                <p><input id="parallelogram-base" type="text" placeholder="b" class="input w-[30%] bg-gray-200 " /> cm <input id="parallelogram-hight"
                                         type="text" placeholder="h" class="input w-[30%] bg-gray-200 " /> cm</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                    <button id="parallelogram-btn" class="btn btn-wide bg-blue-500">Calculate</button>
                                 </div>
                             </div>
                         </div>
@@ -85,13 +85,13 @@
                             <figure class="px-10 pt-10">
                                 <img src="images/rhombus.png" alt="" class="rounded-xl" />
                             </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Rhombus</h2>
+                            <div id="" class="card-body items-center text-center">
+                                <h2 id="rhombus-title" class="card-title">Rhombus</h2>
                                 <p>Area (A) = 0.5 x d1 x d2</p>
-                                <p><input type="text" placeholder="d1" class="input w-[30%] bg-gray-200" /> cm <input
+                                <p><input id="rhombus-kornoOne" type="text" placeholder="d1" class="input w-[30%] bg-gray-200" /> cm <input id="rhombus-kornoTwo"
                                         type="text" placeholder="d2" class="input w-[30%] bg-gray-200" /> cm</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                    <button id="rhombus-btn" class="btn btn-wide bg-blue-500">Calculate</button>
                                 </div>
                             </div>
                         </div>
@@ -103,12 +103,12 @@
                                 <img src="images/pentagon.png" alt="" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Pentagon</h2>
+                                <h2 id="pentagon-title" class="card-title">Pentagon</h2>
                                 <p>Area (A) = 0.5 x p x b</p>
-                                <p><input type="text" placeholder="p" class="input w-[30%] bg-gray-200 " /> cm <input
+                                <p><input id="pentagon-base" type="text" placeholder="p" class="input w-[30%] bg-gray-200 " /> cm <input id="pentagon-hight"
                                         type="text" placeholder="b" class="input w-[30%] bg-gray-200 " /> cm</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                    <button id="pentagon-btn" class="btn btn-wide bg-blue-500">Calculate</button>
                                 </div>
                             </div>
                         </div>
@@ -120,12 +120,12 @@
                                 <img src="images/ellipse.png" alt="" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Ellipse</h2>
+                                <h2 id="ellipse-title" class="card-title">Ellipse</h2>
                                 <p>Area (A) = 3.14 x ab</p>
-                                <p><input type="text" placeholder="a" class="input w-[30%] bg-gray-200 " /> cm <input
+                                <p><input id="ellipse-base" type="text" placeholder="a" class="input w-[30%] bg-gray-200 " /> cm <input id="ellipse-hight"
                                         type="text" placeholder="b" class="input w-[30%] bg-gray-200 " /> cm</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-wide bg-blue-500">Calculate</button>
+                                    <button id="ellipse-btn" class="btn btn-wide bg-blue-500">Calculate</button>
                                 </div>
                             </div>
                         </div>
@@ -141,9 +141,9 @@
                               <tbody id="table-body">
                                 <!-- row 1 -->
                                 <!-- <tr>
-                                  <th>1</th>
-                                  <td>Cy </td>
-                                  <td>Quality</td>
+                                  <th>1.</th>
+                                  <td>title</td>
+                                  <td>area</td>
                                   <td><button id="convert-meter" class="btn btn-info normal-case">Convert to m<sup>2</sup></a></button></td>
                                 </tr> -->
                               </tbody>
